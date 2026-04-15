@@ -60,3 +60,8 @@ xdg-open "ak-launcher://test"
 Afterwards the prior not working login should work, afterwards you can install a Wwise Version.
 If the install throws an error at the first attempt press the retry button, it should restart the install and everything should work from now on.
 If you done everything correct you should be able to install the Wwise Authoringtool and use it on Linux.
+
+Not tested yet:
+- Unity Integration Setup using the Audiokinetic Launcher
+- Unreal Engine Integration Setup using the Audiokinetic Launcher
+- Installing Samples from the Samples section
