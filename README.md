@@ -17,28 +17,28 @@ Installing the Audiokinetic Launcher:
 1. Download the Windows Audiokinetic Launcher: https://www.audiokinetic.com/en/download-launcher/?platform=1
 2. `wine ~/Downloads/AudiokineticLauncher-*.exe`
 3. confirm
-4. setting the xdg-scheme:
-4.1 `nano ~/Desktop/Wwise\ Launcher.desktop ~/.local/share/applications/wwise-launcher.desktop`
-```ini
-# This is how it roughly should look like %u in exec is important and the MimeType Line is important
-[Desktop Entry]
-Name=Wwise Launcher
-Exec=env "WINEPREFIX=/home/warmachine/.wine" wine "C:\\\\users\\\\Public\\\\Desktop\\\\Wwise Launcher.lnk" %u
-Type=Application
-StartupNotify=true
-Comment=Launcher for Wwise
-Path=/home/[Your Username]/.wine/drive_c/Program Files/Wwise Launcher
-Icon=14AD_Wwise Launcher.0
-StartupWMClass=wwise launcher.exe
-MimeType=x-scheme-handler/wwise-launcher;x-scheme-handler/ak-launcher;
-```
+4. setting the xdg-scheme:   
+4.1. `nano ~/Desktop/Wwise\ Launcher.desktop ~/.local/share/applications/wwise-launcher.desktop`
+  ```ini
+  # This is how it roughly should look like %u in exec is important and the MimeType Line is important
+  [Desktop Entry]
+  Name=Wwise Launcher
+  Exec=env "WINEPREFIX=/home/warmachine/.wine" wine "C:\\\\users\\\\Public\\\\Desktop\\\\Wwise Launcher.lnk" %u
+  Type=Application
+  StartupNotify=true
+  Comment=Launcher for Wwise
+  Path=/home/[Your Username]/.wine/drive_c/Program Files/Wwise Launcher
+  Icon=14AD_Wwise Launcher.0
+  StartupWMClass=wwise launcher.exe
+  MimeType=x-scheme-handler/wwise-launcher;x-scheme-handler/ak-launcher;
+  ```
 4.2 refreshing the Database and setting the url-schemes:
-```bash
-cp ~/Desktop/Wwise\ Launcher.desktop ~/.local/share/applications/wwise-launcher.desktop
-update-desktop-database ~/.local/share/applications
-xdg-mime default wwise-launcher.desktop x-scheme-handler/wwise-launcher
-xdg-mime default wwise-launcher.desktop x-scheme-handler/ak-launcher
-```
+  ```bash
+  cp ~/Desktop/Wwise\ Launcher.desktop ~/.local/share/applications/wwise-launcher.desktop
+  update-desktop-database ~/.local/share/applications
+  xdg-mime default wwise-launcher.desktop x-scheme-handler/wwise-launcher
+  xdg-mime default wwise-launcher.desktop x-scheme-handler/ak-launcher
+  ```
 
 5. check if the schemes were set correctly:
 ```bash
