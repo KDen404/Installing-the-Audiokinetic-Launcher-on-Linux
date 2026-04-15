@@ -23,7 +23,7 @@ Installing the Audiokinetic Launcher:
   # This is how it roughly should look like %u in exec is important and the MimeType Line is important
   [Desktop Entry]
   Name=Wwise Launcher
-  Exec=env "WINEPREFIX=/home/warmachine/.wine" wine "C:\\\\users\\\\Public\\\\Desktop\\\\Wwise Launcher.lnk" %u
+  Exec=env "WINEPREFIX=/home/[Your Username]/.wine" wine "C:\\\\users\\\\Public\\\\Desktop\\\\Wwise Launcher.lnk" %u
   Type=Application
   StartupNotify=true
   Comment=Launcher for Wwise
