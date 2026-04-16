@@ -4,6 +4,11 @@ It may not be perfect but an important first step in making The Wwise Sound Engi
 
 I Used a fedora 44 for this.
 
+prerequisites:
+```bash
+dnf install wine winetricks qt5-qttools
+```
+
 wine setup:
 ```bash
 # some may not be necessary if you want test which are really necessary
