@@ -9,6 +9,8 @@ prerequisites:
 dnf install wine winetricks qt5-qttools
 ```
 
+Then reboot your device.
+
 wine setup:
 ```bash
 # some may not be necessary if you want test which are really necessary
