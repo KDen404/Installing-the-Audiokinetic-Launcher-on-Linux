@@ -18,6 +18,7 @@ winetricks winhttp # windows http support
 winetricks wininet # another internet protocol api widely adapted on windows
 winetricks xaudio29 # wwise uses xaudio2 as its audio interfeace therefore it might be necessary
 winetricks vcrun2022 # Visual C++ Redistributable 2015 - 2022 THIS IS IMPORTANT WITHOUT IT EVERY INSTALL ATTEMPT WITHIN THE LAUNCHER WILL FAIL
+winetricks dotnet48 # I tested .NET4.0, .NET4.8 and .NET7 only 4.8 was making install attempts work
 ```
 
 Installing the Audiokinetic Launcher:
